@@ -12,7 +12,12 @@ export default function App() {
   const [cardNumber, setCardNumber] = useState("");
   const [date, setDate] = useState("01/23");
   const [cvc, setCvc] = useState("");
-  
+
+  const handleNameChange = (event:any) => {
+    const value = event.target.value;
+    const filteredValue = value.replace(/[^A-Za-z\s]/ig, ''); // Allow spaces as well
+    setName(filteredValue);
+  };
 
   return (
     <>
@@ -64,7 +69,7 @@ export default function App() {
                     placeholder="e.g. Jane Appleseed"
                     required
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={handleNameChange}
                   />
                 </div>
 
