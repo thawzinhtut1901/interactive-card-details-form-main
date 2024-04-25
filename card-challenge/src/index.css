@@ -21,7 +21,7 @@
 .back-card {
   position: absolute;
   right: 20px;
-  background: url("./images/bg-card-back.png") no-repeat center/cover;
+  background: url("../images/bg-card-back.png") no-repeat center/cover;
   height: 230px;
   width: 320px;
   border-radius: 10px;
