@@ -25,7 +25,7 @@ export default function App() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:gap-x-32 lg:grid-cols-2 max-w-7xl mx-auto">
-          <div className="mt-5 mx-5 grid grid-cols-1">
+          <div className="mx-5 grid grid-cols-1">
             <article className="front-card p-5 flex flex-col justify-between lg:ml-20">
               <img src={logo} alt="" className="w-20 lg:w-28" />
 
